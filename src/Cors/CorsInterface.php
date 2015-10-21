@@ -1,10 +1,4 @@
 <?php
-/**
- * This file is part of Enfants system
- *
- * @copyright Enfants
- * @license   proprietary
- */
 namespace MrPrompt\Silex\Cors;
 
 /**
