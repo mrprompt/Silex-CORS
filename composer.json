@@ -35,5 +35,11 @@
   "require-dev": {
     "phpunit/phpunit": "^5.4",
     "silex/silex": "2.*@dev"
+  },
+  "version": "2.0.0",
+  "extra": {
+	"branch-alias": {
+	  "dev-master": "dev-dev"
+	}
   }
 }
