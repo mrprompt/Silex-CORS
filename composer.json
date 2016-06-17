@@ -17,10 +17,10 @@
       "role" : "Developer"
     },
 	{
-	  "name" : "Domingos Teruel",
-	  "email" : "mingomax@dteruel.net.br",
-	  "homepage" : "http://www.dteruel.net.br",
-	  "role" : "Developer"
+		"name" : "Domingos Teruel",
+		"email" : "mingomax@dteruel.net.br",
+		"homepage" : "http://www.dteruel.net.br",
+		"role" : "Developer"
 	}
   ],
   "autoload": {
