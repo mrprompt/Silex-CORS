@@ -1,4 +1,5 @@
 <?php
+
 namespace MrPrompt\Silex\Cors;
 
 /**
