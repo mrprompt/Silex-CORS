@@ -28,10 +28,9 @@ final class Cors implements CorsInterface, ServiceProviderInterface, BootablePro
          * Add the
          */
         $container[self::HTTP_CORS] = $container->protect(
-            function (Request $request, Response $response) use ($container) {
+            function (Request $request, Response $response) {
                 $response->headers->set("Access-Control-Max-Age", "86400");
                 $response->headers->set("Access-Control-Allow-Origin", "*");
-
                 return $response;
             }
         );
