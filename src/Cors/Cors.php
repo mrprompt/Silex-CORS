@@ -1,8 +1,11 @@
 <?php
+
 namespace MrPrompt\Silex\Cors;
 
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Silex\Api\BootableProviderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -11,23 +14,23 @@ use Symfony\Component\HttpFoundation\Response;
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  * @author Marcel Araujo <admin@marcelaraujo.me>
+ * @author Domingos Teruel <mingomax@dteruel.net.br>
  */
-final class Cors implements CorsInterface, ServiceProviderInterface
+final class Cors implements CorsInterface, ServiceProviderInterface, BootableProviderInterface
 {
     /**
      * (non-PHPdoc)
-     * @see \Silex\ServiceProviderInterface::register()
+     * @see \Pimple\ServiceProviderInterface::register()
      */
-    public function register(Application $app)
+    public function register(Container $container)
     {
         /**
          * Add the
          */
-        $app[self::HTTP_CORS] = $app->protect(
-            function (Request $request, Response $response) use ($app) {
+        $container[self::HTTP_CORS] = $container->protect(
+            function (Request $request, Response $response) {
                 $response->headers->set("Access-Control-Max-Age", "86400");
                 $response->headers->set("Access-Control-Allow-Origin", "*");
-
                 return $response;
             }
         );
@@ -35,12 +38,10 @@ final class Cors implements CorsInterface, ServiceProviderInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Silex\ServiceProviderInterface::boot()
+     * @see \Silex\Api\BootableProviderInterface::boot()
      */
     public function boot(Application $app)
     {
-        $app->flush();
-
         /* @var $routes \Symfony\Component\Routing\RouteCollection */
         $routes = $app['routes'];
 

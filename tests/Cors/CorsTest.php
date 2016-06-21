@@ -1,4 +1,5 @@
 <?php
+
 namespace MrPrompt\Tests\Silex\Cors;
 
 use MrPrompt\Silex\Cors\Cors;
