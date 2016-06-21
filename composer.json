@@ -3,6 +3,7 @@
   "description": "A simple CORS provider to Silex Rest APIs based.",
   "type": "library",
   "license": "BSD-3-Clause",
+  "version": "2.0.0",
   "authors": [
     {
       "name": "Thiago Paes",
@@ -16,12 +17,12 @@
       "homepage" : "http://blog.marcelaraujo.me",
       "role" : "Developer"
     },
-	{
-		"name" : "Domingos Teruel",
-		"email" : "mingomax@dteruel.net.br",
-		"homepage" : "http://www.dteruel.net.br",
-		"role" : "Developer"
-	}
+    {
+      "name" : "Domingos Teruel",
+	  "email" : "mingomax@dteruel.net.br",
+	  "homepage" : "http://www.dteruel.net.br",
+	  "role" : "Developer"
+    }
   ],
   "autoload": {
     "psr-4": {
@@ -35,5 +36,10 @@
   "require-dev": {
     "phpunit/phpunit": "^5.4",
     "silex/silex": "2.*@dev"
+  },
+  "extra": {
+	"branch-alias": {
+	  "dev-master": "2.0.x-dev"
+	}
   }
 }
