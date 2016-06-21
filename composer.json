@@ -1,5 +1,5 @@
 {
-  "name": "mingomax/silex-cors-provider",
+  "name": "mrprompt/silex-cors-provider",
   "description": "A simple CORS provider to Silex Rest APIs based.",
   "type": "library",
   "license": "BSD-3-Clause",
