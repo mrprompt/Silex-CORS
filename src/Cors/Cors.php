@@ -1,6 +1,6 @@
 <?php
 
-namespace MrPrompt\Silex\Cors;
+namespace SilexFriends\Cors;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -6,7 +6,7 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/mrprompt/silex-cors-provider.svg)](http://isitmaintained.com/project/mrprompt/silex-cors-provider "Percentage of issues still open")
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/86d167f3a142416283f9f66240dc2f2f)](https://www.codacy.com/app/mrprompt/silex-cors-provider)
 
-a simple dependency injection container to Silex.
+a simple dependency injection container to Silex 2.x.
 
 # Install
 
