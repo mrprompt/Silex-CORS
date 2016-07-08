@@ -1,5 +1,5 @@
 {
-  "name": "SilexFriends/CORS",
+  "name": "silexfriends/cors",
   "description": "A simple CORS provider to Silex Rest APIs based.",
   "type": "library",
   "license": "MIT",
