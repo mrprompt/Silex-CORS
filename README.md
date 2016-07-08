@@ -11,7 +11,7 @@ a simple dependency injection container to Silex.
 # Install
 
 ```
-composer require mrprompt/silex-cors-provider
+composer require SilexFriends/CORS
 ```
 
 ## Testing

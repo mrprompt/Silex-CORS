@@ -1,8 +1,8 @@
 {
-  "name": "mrprompt/silex-cors-provider",
+  "name": "SilexFriends/CORS",
   "description": "A simple CORS provider to Silex Rest APIs based.",
   "type": "library",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "authors": [
     {
       "name": "Thiago Paes",
@@ -19,8 +19,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "MrPrompt\\Silex\\Cors\\": "src/Cors/",
-      "MrPrompt\\Tests\\Silex\\Cors\\": "tests/Cors/"
+      "SilexFriends\\Cors\\": "src/Cors/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SilexFriends\\Tests\\Cors\\": "tests/Cors/"
     }
   },
   "require": {

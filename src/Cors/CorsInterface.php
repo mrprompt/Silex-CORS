@@ -1,5 +1,5 @@
 <?php
-namespace MrPrompt\Silex\Cors;
+namespace SilexFriends\Cors;
 
 /**
  * CORS validation service interface

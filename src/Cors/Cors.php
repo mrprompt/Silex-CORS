@@ -1,5 +1,5 @@
 <?php
-namespace MrPrompt\Silex\Cors;
+namespace SilexFriends\Cors;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;

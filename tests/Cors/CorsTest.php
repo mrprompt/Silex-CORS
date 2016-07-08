@@ -1,7 +1,7 @@
 <?php
-namespace MrPrompt\Tests\Silex\Cors;
+namespace SilexFriends\Tests\Cors;
 
-use MrPrompt\Silex\Cors\Cors;
+use SilexFriends\Cors\Cors;
 use PHPUnit_Framework_TestCase;
 use Silex\Application;
 
