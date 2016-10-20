@@ -11,9 +11,20 @@ a simple dependency injection container to Silex.
 # Install
 
 ```
-composer require SilexFriends/CORS
+composer require mrprompt/silex-cors-provider
 ```
 
+# Use
+
+```
+use SilexFriends\Cors\Cors as CorsServiceProvider;
+
+...
+
+
+$app->register(new CorsServiceProvider());
+
+```
 ## Testing
 
 Just run *phpunit* without parameters
