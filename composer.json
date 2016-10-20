@@ -19,12 +19,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "SilexFriends\\Cors\\": "src/Cors/"
+      "SilexFriends\\Cors\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SilexFriends\\Tests\\Cors\\": "tests/Cors/"
+      "SilexFriends\\Tests\\Cors\\": "tests/"
     }
   },
   "require": {
